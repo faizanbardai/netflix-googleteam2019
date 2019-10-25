@@ -42,6 +42,43 @@ function buildCard(data) {
     return img;
 };
 
+function textSearch(event) {
+    if (event.keyCode == 13) {
+        emptyMoviesContent();
+        getMovies(render, { text: event.target.value });
+    };
+};
+
+function handleHeaderClick(event) {
+    selectSection(event.target)
+    emptyMoviesContent()
+    switch (event.target.innerText) {
+        case 'TV Series':
+            getMovies(render, { category: 'series' });
+            break;
+        case 'Movies':
+            getMovies(render, { category: 'movie' });
+            break;
+        case 'Children':
+            getMovies(render, { category: 'children' });
+            break;
+        default:
+            getMovies(render);
+            break;
+    };
+};
+
+function emptyMoviesContent() {
+    var contentDiv = document.getElementById('movie-content');
+    var movies = contentDiv.getElementsByTagName('img');
+    while (movies.length) {
+        movies[0].remove();
+    }
+    var spinner = document.getElementById('spinner')
+    spinner.classList.remove('d-none');
+    spinner.classList.add('d-flex');
+};
+
 var MOVIES = [
     {
         title: 'the office - season six',
