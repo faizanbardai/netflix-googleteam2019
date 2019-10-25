@@ -98,7 +98,7 @@ function handleHeaderClick(event) {
 };
 
 function selectSection(element) {
-    var sections = document.getElementsByClassName('nav-item');
+    var sections = document.getElementsByClassName('dropdown-item');
     var listItem = element.parentElement;
     for (var section of sections) {
         section.classList.remove('active');
