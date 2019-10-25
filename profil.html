@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profil <i class="fa fa-pagelines" aria-hidden="true"></i></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    ​
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="profil.css" />
+  </head>
+  <body>
+    <a href="index.html"><img src="img/netflix-logo.jpg" alt="netflix logo" id="logo"/></a>
+    <div class="container-fluid d-flex justify-content-start align-items-center">
+      <div class="container">
+        <h1>Modify your profil</h1>
+        <div class="row">
+          <div class="spinner-border text-info" id="spinnerID" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="col-11" id="info">
+            <input type="text" name="inputUser" id="inputUser" />
+            <input type="checkbox" name="checkboxChilderen" id="checkboxChilderen" />
+            <label class="form-check-label" for="defaultCheck1"> <h5>Childeren</h5> </label>
+            <div>
+              <h5>Language</h5>
+              <div class="btn-group"></div>
+              <button class="btn btn-secondary btn-sm dropdown-toggle" id="tongueID" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                &nbsp&nbsp&nbsp&nbsp
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">UK</a>
+                <a class="dropdown-item" href="#">IT</a>
+                <a class="dropdown-item" href="#">DE</a>
+              </div>
+              <h5>TV series and movies allowed</h5>
+              <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" id="ageGroupsID" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All age groups
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="col-12" id="buttons">
+          <button type="button" class="btn btn-light text-uppercase" id="btnSave">Save</button>
+          <button type="button" class="btn btn-outline-secondary text-uppercase" id="btnCancel">Cancel</button>
+          <button type="button" class="btn btn-outline-secondary text-uppercase" id="btnDelete">Delete profil</button>
+        </div>
+      </div>
+    </div>
+
+    ​
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
